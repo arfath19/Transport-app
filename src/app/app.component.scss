@@ -1,0 +1,22 @@
+label {
+  margin-right: 0.5rem;
+  float: left;
+}
+
+.form-check-input[type="checkbox"] {
+  float: right;
+  margin-right: 4rem;
+}
+
+
+.watermark {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 99;
+  font-size: 4rem;
+  color: #fec;
+  top: 30%;
+  left: 25%;
+  transform: rotate(-30deg);
+  font-weight: bold;
+}

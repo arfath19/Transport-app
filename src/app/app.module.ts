@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AgGridModule } from 'ag-grid-angular';
 
 import { AppComponent } from './app.component';
 import { FormScreenComponent } from './form-screen/form-screen.component';
@@ -14,7 +15,8 @@ import { RateScreenComponent } from './rate-screen/rate-screen.component';
     RateScreenComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AgGridModule
   ],
   providers: [],
   bootstrap: [AppComponent]

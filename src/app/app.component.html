@@ -1,12 +1,81 @@
 <div class="container-fluid">
+  <div class="watermark">
+    Jabalpur Satna Transports
+  </div>
   <app-form-screen></app-form-screen>
-
-  <div class="row">
-    <div class="col-lg-8 border--1px">
+  <div class="row" >
+    <div class="col-lg-8 border--1px" style="padding: 0">
       <app-grid-screen></app-grid-screen>
+      <div class="row" style="margin-right: 0">
+        <div class="col-lg-8 border--1px">
+          <div class="row">
+            <div class="col">Invoice No:</div>
+            <div class="col">Value:</div>
+            <div class="col">EWB No:</div>
+          </div>
+        </div>
+        <div class="col-lg-4 border--1px text-center">GST Payable by</div>
+      </div>
+      <div class="row" style="margin-right: 0">
+        <div class="col-lg-8 border--1px">
+          <div class="row">
+            <div class="col border--1px">
+              Bank Details:
+              Jabalpur Satna Transport Service              
+              Bank : Union Bank of India
+              A/c no: 408501010036574
+              IFSC Code: UBIN0540854
+              Branch: Gopalbagh Jabalpur
+            </div>
+            <div class="col border--1px">
+              <div class="row">
+                <div class="col border--1px text-center">Delivery Report</div>
+              </div>
+              <div class="row">&nbsp;</div>
+              <div class="row">&nbsp;</div>
+              <div class="row">
+                <div class="col">(At Owner risk)</div>
+                <div class="col">Customer sign.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 border--1px">
+          <div class="form-check">
+            <label class="form-check-label" for="consignor"> Consignor </label>
+            <input
+              class="form-check-input margin--l1rem"
+              type="checkbox"
+              name="consignor"
+              id="consignor"
+            />
+          </div>
+          <div class="form-check">
+            <label class="form-check-label" for="consignee"> Consignee </label>
+            <input
+              class="form-check-input margin--l1rem"
+              type="checkbox"
+              name="consignee"
+              id="consignee"
+              checked
+            />
+          </div>
+          <div class="form-check">
+            <label class="form-check-label" for="transportAgent">
+              Transport Agent
+            </label>
+            <input
+              class="form-check-input margin--l1rem"
+              type="checkbox"
+              name="transportAgent"
+              id="transportAgent"
+            />
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-lg-4 border--1px">
-        <app-rate-screen></app-rate-screen>
+    <div class="col-lg-4 border--1px" style="padding: 0">
+      <app-rate-screen></app-rate-screen>
     </div>
   </div>
 </div>

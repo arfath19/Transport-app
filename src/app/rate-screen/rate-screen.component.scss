@@ -1,0 +1,46 @@
+::ng-deep {
+  .rate-grid {
+    .ag-row {
+      background-color: #fff;
+      border: none;
+    }
+    .ag-header-group-cell-label,
+    .ag-header-cell-label {
+      justify-content: center;
+    }
+    .show-input {
+      border: 1px solid #111;
+    }
+    .input-feel {
+      border: 1px solid #30cc7e;
+
+      border-radius: 1px;
+      height: calc(100% - 1px);
+    }
+
+    .ag-row {
+      background-color: #ffffe6;
+    }
+    .ag-root-wrapper-body .ag-layout-normal .ag-focus-managed {
+      background-color: #ffffe6;
+    }
+    .ag-body-clipper .ag-layout-normal {
+      background-color: #ffffe6;
+    }
+  }
+}
+
+.to-pay-alignment {
+  position: relative;
+  bottom: 50%;
+  width: 30%;
+  left: 60%;
+  padding: 0.5rem 1rem;
+  .form-check {
+    margin-bottom: 1rem;
+  }
+}
+
+label {
+  margin-left: 8px;
+}
