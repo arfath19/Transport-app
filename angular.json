@@ -97,6 +97,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "transport-app:build:production",
+            "firebaseProject": "transport-app-1c618",
+            "firebaseHostingSite": "transport-app-1c618"
+          }
         }
       }
     }

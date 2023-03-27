@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "transport-app-1c618"
+  },
+  "targets": {
+    "transport-app-1c618": {
+      "hosting": {
+        "transport-app": [
+          "transport-app-1c618"
+        ]
+      }
+    }
+  }
+}
