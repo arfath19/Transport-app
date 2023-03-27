@@ -1,0 +1,25 @@
+[debug] [2023-03-27T10:57:32.653Z] ----------------------------------------------------------------------
+[debug] [2023-03-27T10:57:32.662Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\king1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-27T10:57:32.664Z] CLI Version:   11.25.1
+[debug] [2023-03-27T10:57:32.664Z] Platform:      win32
+[debug] [2023-03-27T10:57:32.665Z] Node Version:  v19.1.0
+[debug] [2023-03-27T10:57:32.665Z] Time:          Mon Mar 27 2023 16:27:32 GMT+0530 (India Standard Time)
+[debug] [2023-03-27T10:57:32.666Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-27T10:57:32.831Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-27T10:57:32.831Z] > authorizing via signed-in user (transports.database@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Transport APp\transport-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
