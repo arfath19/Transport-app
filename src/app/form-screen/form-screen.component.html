@@ -1,58 +1,138 @@
-  <div class="row">
-    <div class="col-lg-8 border--1px padding--1rem">
-      <div class="display--flex justify-content--space-between">
-        <span class="border--1px padding--l1rem padding--r1rem"
-          >DRIVER COPY</span
-        >
-        <span>Consignment note</span>
-      </div>
+<div class="row">
+  <div class="col-lg-8 border--1px padding--1rem">
+    <div class="display--flex justify-content--space-between">
+      <span class="border--1px padding--l1rem padding--r1rem">DRIVER COPY</span>
+      <span>Consignment note</span>
     </div>
-    <div class="col-lg-4" style="padding: 0">
-      <div
-        class="display--flex justify-content--space-between border--1px padding--tb-small padding--l1rem padding--r1rem"
-      >
-        S.No
-        <input
-          class="form-control form-control-sm w-50"
-          type="text"
-          placeholder="S.No"
-        />
+    <div class="padding--l1rem padding--r1rem">
+      <div class="display--flex justify-content--space-between margin--t1rem">
+        <div class="display--flex w-100">
+          <label class="margin--l1rem margin--r1rem" for="consignor-name">
+            Consignor Name</label
+          ><input
+            type="text"
+            class="form-control form-control-sm"
+            name="consignor-name"
+            placeholder="enter text...."
+          />
+        </div>
+        <div class="display--flex w-100">
+          <label class="margin--l1rem margin--r1rem" for="gstin">GSTIN</label
+          ><input
+            type="text"
+            class="form-control form-control-sm"
+            name="gstin"
+            placeholder="enter GSTIN...."
+          />
+        </div>
+      </div>
+      <div class="display--flex margin--t1rem">
+        <label class="margin--l1rem margin--r1rem" for="consignor-address"
+          >Consignor Address</label
+        ><textarea
+          class="form-control form-control-sm"
+          name="consignor-address"
+          placeholder="enter text...."
+        ></textarea>
       </div>
       <div
-        class="display--flex justify-content--space-between border--1px padding--tb-small padding--l1rem padding--r1rem"
+        class="display--flex justify-content--space-between margin--t1rem padding--t1rem"
+        style="border-top: 1px solid #ffc920"
       >
-        Date
-        <input class="w-50 form-control form-control-sm" type="date" id="date" name="date" />
+        <div class="display--flex w-100">
+          <label class="margin--l1rem margin--r1rem" for="consignee-name"
+            >Consignee Name</label
+          ><input
+            type="text"
+            class="form-control form-control-sm"
+            name="consignee-name"
+            placeholder="enter text...."
+          />
+        </div>
+        <div class="display--flex w-100">
+          <label class="margin--l1rem margin--r1rem" for="gstin">GSTIN</label
+          ><input
+            type="text"
+            class="form-control form-control-sm"
+            name="gstin"
+            placeholder="enter GSTIN...."
+          />
+        </div>
       </div>
-      <div
-        class="display--flex justify-content--space-between border--1px padding--tb-small padding--l1rem padding--r1rem"
-      >
-        Truck No.
-        <input
-          class="form-control form-control-sm w-50"
-          type="text"
-          placeholder="Truck No"
-        />
+
+      <div>
+        <div class="display--flex margin--t1rem">
+          <label class="margin--l1rem margin--r1rem" for="consignee-address"
+            >Consignee Address</label
+          ><textarea
+            class="form-control form-control-sm"
+            name="consignee-address"
+            placeholder="enter text...."
+          ></textarea>
+        </div>
       </div>
-      <div
-        class="display--flex justify-content--space-between border--1px padding--tb-small padding--l1rem padding--r1rem"
-      >
-        From
-        <input
-          class="form-control form-control-sm w-50"
-          type="text"
-          placeholder="From"
-        />
-      </div>
-      <div
-        class="display--flex justify-content--space-between border--1px padding--tb-small padding--l1rem padding--r1rem"
-      >
-        To
-        <input
-          class="form-control form-control-sm w-50"
-          type="text"
-          placeholder="To"
-        />
-      </div>
+    <div class="display--flex margin--t1rem">
+      <label class="margin--l1rem margin--r1rem" for="consignee-address"
+        >Mobile Number</label
+      ><input
+        class="form-control form-control-sm w-50"
+        name="mobileno"
+        placeholder="Mobile no...."
+      />
     </div>
   </div>
+</div>
+  <div class="col-lg-4" style="padding: 0">
+    <div
+      class="display--flex justify-content--space-between border--1px padding--tb-small padding--l1rem padding--r1rem"
+    >
+      S.No
+      <input
+        class="form-control form-control-sm form-control form-control-sm-sm w-50"
+        type="text"
+        placeholder="S.No"
+      />
+    </div>
+    <div
+      class="display--flex justify-content--space-between border--1px padding--tb-small padding--l1rem padding--r1rem"
+    >
+      Date
+      <input
+        class="w-50 form-control form-control-sm form-control form-control-sm-sm"
+        type="date"
+        id="date"
+        name="date"
+      />
+    </div>
+    <div
+      class="display--flex justify-content--space-between border--1px padding--tb-small padding--l1rem padding--r1rem"
+    >
+      Truck No.
+      <input
+        class="form-control form-control-sm form-control form-control-sm-sm w-50"
+        type="text"
+        placeholder="Truck No"
+      />
+    </div>
+    <div
+      class="display--flex justify-content--space-between border--1px padding--tb-small padding--l1rem padding--r1rem"
+    >
+      From
+      <input
+        class="form-control form-control-sm form-control form-control-sm-sm w-50"
+        type="text"
+        placeholder="From"
+      />
+    </div>
+    <div
+      class="display--flex justify-content--space-between border--1px padding--tb-small padding--l1rem padding--r1rem"
+    >
+      To
+      <input
+        class="form-control form-control-sm form-control form-control-sm-sm w-50"
+        type="text"
+        placeholder="To"
+      />
+    </div>
+  </div>
+</div>

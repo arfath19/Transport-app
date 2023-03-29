@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'transport-app';
+  // title = 'transport-app';
+  public onCellValueChanged(event:any){
+    console.log(event)
+
+  }
 }
 
 // transport-app firebase app name

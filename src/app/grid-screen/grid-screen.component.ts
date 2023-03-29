@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { ColDef, ISelectCellEditorParams } from 'ag-grid-community';
 import { AddButtonRenderer } from './add-row-renderer.component';
 import { CellRenderer } from './cell-renderer.component';
@@ -9,8 +9,8 @@ import { RowData } from './grid-screen.models';
   styleUrls: ['./grid-screen.component.scss']
 })
 export class GridScreenComponent {
-
-  public options = ['Bag','Jar','Container','Boxes']
+  @Output() public cellValueChanged=new EventEmitter();
+  public options = ['Bag', 'Jar', 'Container', 'Boxes']
 
   public columnDefs = [
     {
@@ -31,10 +31,20 @@ export class GridScreenComponent {
     {
       headerName: 'Description (Said to contain)',
       spanHeaderHeight: true,
-      field: 'description',
       flex: 2,
       children: [
-        { flex: 1 },
+        {
+          flex: 1,
+          field: 'description-text',
+          valueGetter: (params: any) => params.data.description.text,
+          valueSetter: (params: any) => {
+            if (!!params.data.description) {
+
+              params.data.description.text = params.newValue;
+            }
+            return true;
+          }
+        },
         {
           headerName: 'Dropdown',
           field: 'dropdown',
@@ -47,7 +57,14 @@ export class GridScreenComponent {
           cellEditorParams: {
             values: this.options,
           } as ISelectCellEditorParams,
-          onCellValueChanged:(params:any)=>console.log(params)
+          valueGetter: (params: any) => params.data.description.dropdown,
+          valueSetter: (params: any) => {
+            if (!!params.data.description) {
+
+              params.data.description.dropdown = params.newValue;
+            }
+            return true;
+          }
         }
       ]
     },
@@ -58,24 +75,34 @@ export class GridScreenComponent {
           headerName: 'Charged',
           field: 'charged',
           flex: 1,
+          valueGetter: (params: any) => params.data.charged,
+          valueSetter: (params: any) => {
+            params.data.charged = params.newValue;
+            return true;
+          }
         },
         {
           headerName: 'Actual',
           field: 'actual',
           flex: 1,
+          valueGetter: (params: any) => params.data.actual,
+          valueSetter: (params: any) => {
+            params.data.actual = params.newValue;
+            return true;
+          }
         }
       ]
     }
   ];
 
   public rowData: RowData[] = [
-    { package: '', description: '', weight: '', addRow: true }
+    { package: '', description: { text: '', dropdown: '' }, actual: '', charged: '', addRow: true }
   ];
 
   public onBtnClick1(e: any) {
     const rowData = this.rowData.slice();
     rowData.splice(rowData.length - 1, 0,
-      { package: '', description: '', weight: '' }
+      { package: '', description: { text: '', dropdown: '' }, actual: '', charged: '', }
     );
     this.rowData = [...rowData]
     console.log(rowData)
@@ -86,7 +113,8 @@ export class GridScreenComponent {
     suppressMovable: true,
     resizable: false,
     filter: false,
-    editable:(params:any)=>!params.data?.addRow ,
+    editable: (params: any) => !params.data?.addRow,
     singleClickEdit: true,
+    onCellValueChanged: (params: any) => this.cellValueChanged.emit(params.data)
   };
 }

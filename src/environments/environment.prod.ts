@@ -9,6 +9,6 @@ export const environment = {
         messagingSenderId: "854717452743",
         appId: "1:854717452743:web:7a32983ac8ecfd3d03c9e2",
         measurementId: "G-VPHJ4VF0ES",
-        // databaseURL: '[PROJECT_DB_URL]',
+        databaseURL: 'https://transport-app-1c618-default-rtdb.asia-southeast1.firebasedatabase.app/:jabalpur',
     }
 };

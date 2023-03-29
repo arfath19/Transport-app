@@ -1,6 +1,12 @@
 export interface RowData {
     package: string;
-     description: string;
-     weight: string;
+     description:DescriptionItem ;
+     actual: string;
+     charged: string;
      addRow?: boolean 
+}
+
+export interface DescriptionItem{
+    text:string;
+    dropdown:string
 }
